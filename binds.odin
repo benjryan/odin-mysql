@@ -184,11 +184,11 @@ bindr_time_mysql :: proc(t: ^Time, type: Time_Type) -> Bind {
 
 @(private)
 time_to_buffer_type :: proc (type: Time_Type) -> Buffer_Type {
-	switch type {
-	case .Time:      return .Time
-	case .Date_Time: return .Date_Time
-	case .Timestamp: return .Timestamp
-	case .Date:      return .Date
+    switch type {
+    case .Time:      return .Time
+    case .Date_Time: return .Date_Time
+    case .Timestamp: return .Timestamp
+    case .Date:      return .Date
     case:            return nil
-	}
+    }
 }
